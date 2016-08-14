@@ -1,14 +1,16 @@
+import '../css/styles.css'
+import App from './app/App'
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './css/styles.css'
+import rootReducer from './rootReducer'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+
+let store = createStore(rootReducer)
 
 ReactDOM.render(
-  <div className='container'>
-    <div className='row'>
-      <div className='col-md-6 col-md-offset-3'>
-        <h1>Sandbox</h1>
-      </div>
-    </div>
-  </div>,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root')
 )
