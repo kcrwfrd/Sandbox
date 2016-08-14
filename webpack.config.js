@@ -6,7 +6,7 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: {
     app: [
-      'webpack-dev-server/client?http://localhost:4000',
+      'webpack-dev-server/client?http://localhost:4040',
       'webpack/hot/dev-server',
       './js/index'
     ],
