@@ -8,7 +8,7 @@ module.exports = {
     app: [
       'webpack-dev-server/client?http://localhost:4000',
       'webpack/hot/dev-server',
-      './index'
+      './js/index'
     ],
     vendor: [
       'lodash'
